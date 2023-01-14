@@ -23,10 +23,33 @@
  text-align: center;
 }
 
-button{
+.main{
  height: 40px;
  width: 70px;
  border-radius: 25px;
  justify-content: center;
  align-self: center;
+}
+
+#add{
+ position: fixed;
+ left: 98vw;
+ top: 50vh;
+ height: 50px;
+  z-index: 100;
+}
+
+#sub {
+ position: fixed;
+ left: 51vw;
+ top: 50vh;
+ height: 50px;
+  z-index: 100;
+}
+
+#cost2{
+ position: fixed;
+ top: 0px;
+ left: 90vw;
+ z-index: 100;
 }

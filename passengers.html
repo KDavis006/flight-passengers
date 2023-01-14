@@ -22,7 +22,7 @@
 
 <p></p>
 
-<p><strong>Date Leaving</strong><input type="date" id="dateL"><strong> &#10140; Date Returning</strong><input type="date" id="dateR"></p>
+<p><strong>Date Leaving: </strong><input type="date" id="dateL"><strong> &#10140; Date Returning: </strong><input type="date" id="dateR"></p>
 <p><strong>Number of bags</strong><input type="number" placeholder="0" id="numBags"></p>
 
 
@@ -40,24 +40,64 @@
 
  <p><strong>Extra features</strong></p>
 
- <p><input type="checkbox" name="checkbox" id="legRoom">More leg room</p>
- <p><input type="checkbox" name="checkbox" id="windowSeat">Window Seat</p>
- <p><input type="checkbox" name="checkbox" id="extraMeal">Extra Meal</p>
- <p><input type="checkbox" name="checkbox" id="headphones">Headphones</p>
- <p><input type="checkbox" name="checkbox" id="pillowBlanket">Pillow & Blanket</p>
- <p><input type="checkbox" name="checkbox" id="puzzleBook">Puzzle Book</p>
- <p><input type="checkbox" name="checkbox" id="seatWScreen">Seat with screen</p>
+ <p><input type="checkbox" name="checkbox" id="legRoom"><strong>More leg room</strong></p>
+ <p><input type="checkbox" name="checkbox" id="windowSeat"><strong>Window Seat</strong></p>
+ <p><input type="checkbox" name="checkbox" id="extraMeal"><strong>Extra Meal</strong></p>
+ <p><input type="checkbox" name="checkbox" id="headphones"><strong>Headphones</strong></p>
+ <p><input type="checkbox" name="checkbox" id="pillowBlanket"><strong>Pillow & Blanket</strong></p>
+ <p><input type="checkbox" name="checkbox" id="puzzleBook"><strong>Puzzle Book</strong></p>
+ <p><input type="checkbox" name="checkbox" id="seatWScreen"><strong>Seat with screen</strong></p>
 
- <button type="submit" onclick="submit()">Submit</button>
+ <button class="main" type="submit" onclick="submit()">Submit</button>
  </div>
 
 <div class="vl"></div>
 
 <div id="container2">
-  <h2 id="namef">12345</h2>
-  <h2 id="namel">12345</h2>
-  <br>
-  <label>Date of Birth<p id="DoT2">1234567</p></label>
+
+  <h2>Edit Person</h2>
+
+  <h3>Firstname: <input type="text" id="namef"></input></h3>
+  
+  <h3>Lastname: <input type="text" id="namel"></input></h3>
+  
+  <p><strong>Date of Birth: </strong><input type="date" id="DoT2"></input></p>
+
+  <h4><strong>Date Leaving: </strong><input type="date" id="dateLeave"></input> &#10140; <label><strong>Date Returning: </strong></label><input type="date" id="dateReturn"></input></h4>
+
+  <h4>Number of Bags: <input type="number" id="bagNum"></h4>
+
+  <p><strong>Meal Type: </strong><label for="meal">
+    <select name="meal" id="typeMeal2">
+      <option value="beef">Beef</option>
+      <option value="chicken">Chicken</option>
+      <option value="fish">Fish</option>
+      <option value="vegan">Vegan</option>
+      <option value="vegitarian">Vegitarian</option>
+    </select>
+  </label></p>
+
+  <h3>Extras: </h3>
+
+  <p><input type="checkbox" name="checkbox" id="legRoom2"><strong>More leg room</strong></p>
+  <p><input type="checkbox" name="checkbox" id="windowSeat2"><strong>Window Seat</strong></p>
+  <p><input type="checkbox" name="checkbox" id="extraMeal2"><strong>Extra Meal</strong></p>
+  <p><input type="checkbox" name="checkbox" id="headphones2"><strong>Headphones</strong></p>
+  <p><input type="checkbox" name="checkbox" id="pillowBlanket2"><strong>Pillow & Blanket</strong></p>
+  <p><input type="checkbox" name="checkbox" id="puzzleBook2"><strong>Puzzle Book</strong></p>
+  <p><input type="checkbox" name="checkbox" id="seatWScreen2"><strong>Seat with screen</strong></p>
+
+  <button class="main" id="edit" onclick="edit()">Edit</button>
+
+</div>
+
+<div id="arrows">
+  <button id="sub" onclick="subtract()">&#10094;</button>
+  
+  <button id="add" onclick="add()">&#10095;</button>
+
+  <h2 id="cost2">Cost: $<label id="cost"></label></h2>
+
 </div>
   <script src="passengers.js"></script>
 </body>
